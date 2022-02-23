@@ -1,6 +1,6 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap-libs/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from 'pancakeswap-chfry-sdk'
 
-export const ROUTER_ADDRESS = '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F'
+export const ROUTER_ADDRESS = '0xB7569D2B3fC3F3A0B23bfC669Ae3F94178fde508'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -8,8 +8,8 @@ type ChainTokenList = {
 }
 
 export const CAKE = new Token(ChainId.MAINNET, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'CAKE', 'PancakeSwap Token')
-export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
-export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
+export const WBNB = new Token(ChainId.TESTNET, '0xae07502b1b76E140825A7b471924096C35bc51A7', 18, 'WBNB', 'Wrapped BNB')
+export const DAI = new Token(ChainId.TESTNET, '0x9f33Cd2b2a64c338Ec9eBf346D6958c1E571C227', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
 export const BTCB = new Token(ChainId.MAINNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')
 export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD')
@@ -30,7 +30,7 @@ export const ETH = new Token(
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
+  [ChainId.TESTNET]: [WETH[ChainId.TESTNET]],
 }
 
 // used to construct intermediary pairs for trading
