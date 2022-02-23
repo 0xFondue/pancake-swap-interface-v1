@@ -1,5 +1,5 @@
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@pancakeswap-libs/sdk'
+import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from 'pancakeswap-chfry-sdk'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -87,9 +87,9 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  '0xBCfCcbde45cE874adCB698cC183deBcF17952812', // v2 factory
-  '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01
-  '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F', // v2 router 02
+  '0xD4c402ff9Ab8d9F835583d40E01F99406f990401', // v2 factory
+  '0x4A7d6A4d5B6F03bE3499CCcdDeBc7921791f0DDa', // v2 router 01
+  '0xB7569D2B3fC3F3A0B23bfC669Ae3F94178fde508', // v2 router 02
 ]
 
 /**

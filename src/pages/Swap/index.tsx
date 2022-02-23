@@ -1,5 +1,5 @@
-import { CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap-libs/sdk'
-import React, { useCallback, useContext, useEffect, useMemo, useState, useRef } from 'react'
+import { CurrencyAmount, JSBI, Token, Trade } from 'pancakeswap-chfry-sdk'
+import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import { CardBody, ArrowDownIcon, Button, IconButton, Text, useModal, Link, Flex } from '@pancakeswap-libs/uikit'
 import styled, { ThemeContext } from 'styled-components'

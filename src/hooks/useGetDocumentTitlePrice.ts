@@ -4,8 +4,10 @@ import useGetCakeBusdLpPrice from 'utils/useGetCakeBusdLpPrice'
 const useGetDocumentTitlePrice = () => {
   const cakePriceBusd = useGetCakeBusdLpPrice()
 
-  const cakePriceBusdString =
-    Number.isNaN(cakePriceBusd) || cakePriceBusd === 0 || !cakePriceBusd
+  const cakePriceUsd = priceData ? parseFloat(priceData.data[CAKE.address]?.price ?? 0) : 0
+
+  const cakePriceUsdString =
+    Number.isNaN(cakePriceUsd) || cakePriceUsd === 0
       ? ''
       : ` - $${cakePriceBusd.toLocaleString(undefined, {
           minimumFractionDigits: 3,
